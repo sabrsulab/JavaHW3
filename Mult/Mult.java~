@@ -1,0 +1,26 @@
+class recursiveMult
+{
+public static int mult(int x, int y)
+{
+  if(x==0)
+    return 0;
+  if(y==0)
+    return 0;
+  else
+    return x + mult(x,y-1);
+}
+public static void main(String[] args)
+{
+  int problem1 = mult(1,2);
+  System.out.println("1*2= " + problem1);
+  
+  int problem2 = mult(20,15);
+  System.out.println("20*15= " + problem2);
+  
+  int problem3 = mult(0, 3);
+  System.out.println("0*3= " + problem3);
+  
+  int problem4 = mult(1000, 0);
+  System.out.println("1000*0= " + problem4);
+}//end main
+}//end recursiveMult class
